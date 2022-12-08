@@ -2,7 +2,7 @@
 # exit on error
 set -o errexit
 
-poetry install 
+poetry install --no-root
 
 pip install --force-reinstall -U setuptools
 python manage.py collectstatic --no-input
